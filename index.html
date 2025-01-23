@@ -11,7 +11,14 @@
 
 <script>
 $(document).ready(function() {
-  // Your jQuery code here
+        function viewImageFullScreen(src) {
+            const fullScreenWindow = window.open("", "_blank");
+            fullScreenWindow.document.write(
+                `<html><head><title>Image Full Screen</title></head><body style="margin:0;display:flex;justify-content:center;align-items:center;background-color:#000;">
+                <img src="${src}" style="max-width:100%;max-height:100%;">
+                </body></html>`
+            );
+        }
 });
 </script>
 
@@ -24,7 +31,7 @@ $(document).ready(function() {
 	<div data-role="content">	
 
         <ul>
-           <ui><a href="https://natxl.github.io/Hawaii/February2025/" data-ajax="false" data-role="button" data-icon="forward" data-iconpos="right">Hawai'i February 2025</a></ui>
+           <ui><a href="https://natxl.github.io/Hawaii/February2025/" data-ajax="false" data-role="button" data-icon="forward" data-iconpos="right" onclick="viewImageFullScreen(this.src)">Hawai'i February 2025</a></ui>
         </ul>
 
 	</div><!-- /content -->
