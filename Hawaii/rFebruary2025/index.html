@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel and Ed's Big Island Vacation Recap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-pair {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .image {
+            width: 49%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function viewImageFullScreen(src) {
+            const fullScreenWindow = window.open("", "_blank");
+            fullScreenWindow.document.write(
+                `<html><head><title>Image Full Screen</title></head><body style="margin:0;display:flex;justify-content:center;align-items:center;background-color:#000;">
+                <img src="${src}" style="max-width:100%;max-height:100%;">
+                </body></html>`
+            );
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Angel and Ed's Big Island Vacation Recap</h1>
+
+        <div class="section">
+            <h2>Where We Ate</h2>
+            <p><strong>Merriman’s in Waimea:</strong> A top-tier farm-to-table restaurant serving fresh Hawaiian cuisine.</p>
+            <div class="image-pair">
+                <img src="images/merrimans1.jpeg" alt="Merriman's Interior" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/merrimans2.jpeg" alt="Merriman's Dish" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Pau Pizza in Waimea:</strong> A local favorite for delicious, wood-fired pizzas.</p>
+            <div class="image-pair">
+                <img src="images/paupizza1.jpeg" alt="Pau Pizza Exterior" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/paupizza2.jpeg" alt="Pau Pizza Slice" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Big Island Brewhaus in Waimea:</strong> Known for craft beer and island-inspired dishes.</p>
+            <div class="image-pair">
+                <img src="images/bibrewhouse1.jpeg" alt="Brewhouse Interior" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/bibrewhouse2.jpeg" alt="Brewhouse Beer Flight" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Hawaiian Style Café in Waimea:</strong> Famous for their huge portions and local comfort food.</p>
+            <div class="image-pair">
+                <img src="images/hawaiianstylecafe1.jpeg" alt="Café Exterior" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/hawaiianstylecafe2.jpeg" alt="Café Breakfast Plate" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Pineapples in Hilo:</strong> A vibrant open-air restaurant with tropical dishes.</p>
+            <div class="image-pair">
+                <img src="images/pineapples1.jpeg" alt="Pineapples Restaurant" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/pineapples2.jpeg" alt="Pineapples Signature Dish" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Huggos in Kona:</strong> An upscale beachside restaurant, perfect for sunset dining.</p>
+            <div class="image-pair">
+                <img src="images/huggos1.jpeg" alt="Huggos at Sunset" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/huggos2.jpeg" alt="Huggos Seafood Plate" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Beaches We Visited</h2>
+            <p><strong>Puako Beach:</strong> A beautiful rocky shoreline with tide pools and sea turtles.</p>
+            <div class="image-pair">
+                <img src="images/puako1.jpeg" alt="Puako Beach Tide Pools" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/puako2.jpeg" alt="Sea Turtle at Puako" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Hapuna Beach:</strong> One of the largest white sand beaches on the Big Island, great for swimming.</p>
+            <div class="image-pair">
+                <img src="images/hapuna1.jpeg" alt="Hapuna Beach Shoreline" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/hapuna2.jpeg" alt="Hapuna Beach Aerial View" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Waipi’o Valley Beach:</strong> A stunning black sand beach with lush cliffs.</p>
+            <div class="image-pair">
+                <img src="images/waipio1.jpeg" alt="Waipi’o Valley Beach" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/waipio2.jpeg" alt="Waipi’o Valley Cliffs" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <div class="image-pair">
+                <img src="images/waipio3.jpeg" alt="Waipi’o Valley Beach" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/waipio4.jpeg" alt="Waipi’o Valley Cliffs" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Adventures and Activities</h2>
+            <p><strong>Akaka Falls State Park:</strong> Home to the spectacular 442-foot Akaka Falls.</p>
+            <div class="image-pair">
+                <img src="images/akaka1.jpeg" alt="Akaka Falls" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/akaka3.jpeg" alt="Akaka Falls" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <img src="images/akaka2.jpeg" alt="Akaka Falls" class="image" onclick="viewImageFullScreen(this.src)">
+            <p><strong>Onomea Bay Trail:</strong> A scenic coastal trail near the botanical gardens.</p>
+            <div class="image-pair"></div>
+                <img src="images/onomea1.jpeg" alt="Onomea" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/onomea2.jpeg" alt="Onomea" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <p><strong>Mauna Kea Summit:</strong> We visited the CFH Telescope for an unforgettable experience.</p>
+            <div class="image-pair">
+                <img src="images/maunakea1.jpeg" alt="Mauna Kea" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/maunakea2.jpeg" alt="Mauna Kea" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <div class="image-pair">    
+                <img src="images/maunakea7.jpeg" alt="Mauna Kea" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/maunakea9.jpeg" alt="Mauna Kea" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <div class="image-pair">        
+                <img src="images/maunakea3.jpeg" alt="Mauna Kea" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/maunakea8.jpeg" alt="Mauna Kea" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <img src="images/maunakea.jpeg" alt="Mauna Kea" class="image" onclick="viewImageFullScreen(this.src)">
+            <p><strong>Farmers’ Markets:</strong> Visited Kamuela, Hāmākua Harvest, and Hilo Farmers Markets.</p>
+            <div class="image-pair">
+                <img src="images/market1.jpeg" alt="Market" class="image" onclick="viewImageFullScreen(this.src)">
+                <img src="images/market2.jpeg" alt="Market" class="image" onclick="viewImageFullScreen(this.src)">
+            </div>
+            <img src="images/market3.jpeg" alt="Market" class="image" onclick="viewImageFullScreen(this.src)">
+            <p><strong>Island Breeze Luau:</strong> Watched from the Kailua Pier at King Kamehameha Kona Beach Resort.</p>
+            <img src="images/luau.jpeg" alt="Luau" class="image" onclick="viewImageFullScreen(this.src)">
+            <p><strong>Live Music:</strong> Listened to HAPA at the Blue Dragon Tavern and jazz at Uila Records in Waimea.</p>
+            <img src="images/music.jpeg" alt="Music" class="image" onclick="viewImageFullScreen(this.src)">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Things We Want to Do Next Time</h2>
+            <ul>
+                <li>Have dinner at Magic’s Beach Grill in Kona</li>
+                <li>Explore the Waikoloa & Puako Petroglyphs</li>
+                <li>Visit an active lava flow</li>
+                <li>Fair Wind Snorkel Cruise to Captain Cook’s Cove</li>
+                <li>Eat at Hina Rae’s - Waimea</li>
+                <li>Line Waterfall Zipline Experience</li>
+                <li>Explore the Waipi’o Ranch UTV tour</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
