@@ -3,37 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <title>Angel &amp; Ed’s Bend, OR Getaway (June 19–22, 2025)</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #4A7C59; color: white; padding: 20px; text-align: center; }
-    .section { padding: 20px; border-bottom: 1px solid #ddd; }
-    .section h2 { color: #4A7C59; }
-    .place { margin-bottom: 20px; }
-    .place img { max-width: 100%; height: auto; border-radius: 4px; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap:10px; }
-    footer { text-align:center; padding:10px; background:#f4f4f4; }
-  </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url("images/Figure1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* This line keeps the image fixed */
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image {
+            width: 98.5%;
+            height: 200px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .image-row {
+            align-items: center;
+        }
+        .image-row img {
+            height: 200px;
+            max-width: 49%;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: disc;
+            padding: 20;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }        
+	nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
 </head>
 <body>
 
 <header>
-  <h1>Angel &amp; Ed’s Bend, Oregon Getaway</h1>
-  <p><strong>June 19–22, 2025</strong></p>
+  <h1>Angel &amp; Ed’s  2025 Bend, Oregon Getaway</h1>
+
+    <nav>
+        <a href="#airbnb-stay">Where we stayed </a> <p></p>
+        <a href="#Itinerary"> Trip Itinerary</a> 
+    </nav>
+    <nav>
+        <a href="#june-19">June 19</a>
+        <a href="#june-20">June 20</a>
+        <a href="#june-21">June 21</a>
+        <a href="#june-22">June 22</a>
+    </nav>
+
 </header>
 
-<div class="section">
+<!-- 
+        <div id="where-to-go" class="section">
+            <h2>Where to Go in Hawaii</h2>
+            <p><strong>Kona (West Side):</strong> Great for sunny weather, beaches, snorkeling, and shopping.</p>
+            <a href="images/Kona.jpeg"><img src="images/Kona.jpeg" alt="Kona Coastline" class="image"></a>
+            <p><strong>Hilo (East Side):</strong> Ideal for lush rainforests, waterfalls, and exploring.</p>
+            <a href="images/East_Side.jpeg"><img src="images/East_Side.jpeg" alt="Hilo Rainforests" class="image"></a>
+        </div>
+-->
+
+<div id="airbnb-stay" class="place">
   <h2>🏡 Airbnb Stay</h2>
-  <div class="gallery">
-    <!-- Replace these Airbnb image URLs with actual listing photos -->
-    <img src="https://a0.muscache.com/im/pictures/rooms/45437010/original/b3cd66d8.jpg" alt="Airbnb exterior">
-    <img src="https://a0.muscache.com/im/pictures/rooms/36150110/original/4d8aac5e.jpg" alt="Cozy living room">
-    <img src="https://a0.muscache.com/im/pictures/rooms/36150110/original/xyz-hot-tub.jpg" alt="Hot tub under trees">
-    <img src="https://a0.muscache.com/im/pictures/rooms/53050020/original/hot-tub-view.jpg" alt="Mountain view from hot tub">
+  <div class="image-row">
+    <a href="images/air01.jpeg"><img src="images/air01.jpeg" alt="" class="image"></a>
+    <a href="images/air02.jpeg"><img src="images/air02.jpeg" alt="" class="image"></a>
+    <a href="images/air03.jpeg"><img src="images/air03.jpeg" alt="" class="image"></a>
   </div>
   <p>Nestled in pines just outside Bend, the custom-built Airbnb featured vaulted ceilings, a private hot tub, forest wildlife visits, and sweeping mountain views.</p>
 </div>
 
-<div class="section">
+<div id="Itinerary" class="section">
   <h2>📅 Trip Itinerary</h2>
 
   <div class="place">
